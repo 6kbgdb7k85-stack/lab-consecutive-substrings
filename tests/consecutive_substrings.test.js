@@ -12,3 +12,7 @@ test('can handle many letters', () => {
   expect(consecutiveSubstrings('ab')).toEqual(['a', 'ab', 'b']);
   expect(consecutiveSubstrings('abc')).toEqual(['a', 'ab', 'abc', 'b', 'bc', 'c']);
 });
+
+test('can handle empty string',()=>{
+  expect(consecutiveSubstrings('')).toEqual([])
+})
